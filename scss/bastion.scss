@@ -1,0 +1,439 @@
+$bastion-red:rgb(190,21,27);
+$bastion-blue:rgb(35,62,81);
+$bastion-green:rgb(117,195,74);
+$bastion-darkgreen:rgb(120,149,81);
+$break-large: 1280px;
+$break-medium:1130px;
+$break-small:992px;
+
+
+*{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.hidden{
+  overflow:hidden;
+}
+
+#wrapper{
+  .navbar{
+    padding: 20px 100px;
+    background-color:white;
+    .navbar-nav{
+      a{
+        color:$bastion-blue;
+        font-weight:bold;
+        margin-left: 12px;
+        @media screen and (max-width: $break-large) {
+          font-size:12px;
+        }
+        @media screen and (max-width: $break-medium) {
+          font-size:10px;
+          margin-left:7px;
+        }
+        &:hover{
+          color:$bastion-red;
+        }
+      }
+      .active a{
+        color:$bastion-red;
+        img{
+          -webkit-filter: invert(65%) grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(400%) contrast(2);
+          filter: invert(70%) grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(400%) contrast(2);
+          margin-right: 10px;
+        }
+      }
+      .contact{
+        background-color:$bastion-green;
+        color:white;
+        box-shadow:-1px 2px 15px 2px lightgrey;
+        transition: all .2s ease-in-out;
+        &:hover{
+          color:white;
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+  #header{
+    .carousel-item-next, .carousel-item-prev, .carousel-item.active{
+      display:flex !important;
+    }
+    position:relative;
+    top:88px;
+    .container-fluid{
+      height:100%;
+      padding:0;
+      .carousel{
+        height:100%;
+        .carousel-inner{
+          height:100%;
+          .active{
+            display:flex !important;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-size: cover;
+            background-position: center center;
+            .carouselContent{
+              position:absolute;
+              h6{
+                color:$bastion-red;
+                font-size:18px;
+                text-align:center;
+                font-weight:bold;
+              }
+              h3{
+                font-size:48px;
+                color:white;
+                text-align:center;
+                font-weight:bold;
+                @media screen and (max-width: $break-medium) {
+                  font-size:32px !important;
+                }
+                @media screen and (max-width: $break-small) {
+                  font-size:24px !important;
+                }
+              }
+              .carouselButton{
+                display: block;
+                margin: 0 auto;
+                color:white;
+                background-color:$bastion-red;
+                border:none;
+                outline:none;
+                padding: 14px 50px;
+                cursor:pointer;
+              }
+            }
+          }
+          .carousel-item{
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-size: cover;
+            background-position: center center;
+            .carouselContent{
+              position:absolute;
+              h6{
+                color:$bastion-red;
+                font-size:18px;
+                text-align:center;
+                font-weight:bold;
+              }
+              h3{
+                font-size:48px;
+                color:white;
+                text-align:center;
+                font-weight:bold;
+                @media screen and (max-width: $break-medium) {
+                  font-size:32px !important;
+                }
+                @media screen and (max-width: $break-small) {
+                  font-size:24px !important;
+                }
+              }
+              .carouselButton{
+                display: block;
+                margin: 0 auto;
+                color:white;
+                background-color:$bastion-red;
+                border:none;
+                outline:none;
+                padding: 14px 50px;
+                cursor:pointer;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  #aboutus{
+    position:relative;
+    top:88px;
+    margin-top:60px;
+    .container-fluid{
+      overflow:hidden;
+    }
+    h6{
+      font-size:18px;
+      color:$bastion-red;
+      font-weight:bold;
+    }
+    h3{
+      font-size:36px;
+      color:$bastion-blue;
+      font-weight:bold;
+      margin-top:20px;
+    }
+    p{
+      font-size:16px;
+      color:$bastion-blue;
+      padding-right:20px;
+      margin-top:20px;
+    }
+    .abouticon{
+      h6{
+        font-size:16px;
+      }
+      p{
+        margin:0;
+      }
+    }
+    .aboutimage{
+      position: absolute;
+      left: 60px;
+      top: 50px;
+      height: 325px;
+      width: 525px;
+      box-shadow: 1px 1px 40px 10px lightgrey;
+    }
+    .aboutlogo{
+      position: absolute;
+      left: 75px;
+      top: 60px;
+    }
+    .aboutMore{
+      position: absolute;
+      bottom: 0;
+      left:60px;
+      width: 500px;
+      display: flex;
+      .textarea{
+        background-color:$bastion-darkgreen;
+        width: 80%;
+        height: 55px;
+        h6{
+          color:white;
+          margin: 0;
+          padding-left: 20px;
+          font-weight: 600;
+        }
+      }
+      button{
+        color:white;
+        background-color:$bastion-blue;
+        border:none;
+        outline:none;
+        width:50px;
+        font-size:32px;
+        cursor:pointer;
+      }
+    }
+    .aboutNumbers{
+      margin-top:80px;
+      text-align:center;
+      img{
+        display:block;
+        margin:0 auto;
+      }
+      h5{
+        margin-top: 15px;
+        font-weight:bold;
+        color:$bastion-blue;
+      }
+      p{
+        margin-top:8px;
+        font-size: 14px;
+        font-weight: bold;
+        padding-right: 0;
+        color:$bastion-blue;
+      }
+    }
+  }
+  #advantages{
+    position: relative;
+    top: 120px;
+    background-color:$bastion-blue;
+    .container-fluid{
+      padding-top:60px;
+    }
+    .left{
+      padding-right:0;
+      padding-top:40px;
+    }
+    .pattern{
+      float: right;
+    }
+    .advantageimage{
+      position: absolute;
+      top: 90px;
+      right: 54px;
+      height: 325px;
+      width: 525px;
+    }
+    .right{
+      padding-top:40px;
+      h6{
+        font-size:16px;
+        color:$bastion-red;
+        text-align:right;
+        font-weight:bold;
+      }
+      h3{
+        font-size:36px;
+        color:white;
+        font-weight:bold;
+        text-align: right;
+      }
+      .mb-3{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+        margin-left: 50px;
+      }
+      li a{
+        color:white;
+        font-size:14px;
+        font-weight:bold;
+      }
+      .nav-link.active{
+        background-color:$bastion-red;
+      }
+      .tab-content{
+        margin-left:32px;
+      }
+      .tab-pane{
+        ul{
+          li{
+            color:$bastion-red;
+          }
+          li span {
+            color: white;
+            font-size:12px;
+          }
+          strong{
+            font-size:16px;
+          }
+        }
+      }
+      #pills-profile{
+        ul{
+          li{
+            padding-top:15px;
+            span{
+              font-size:16px;
+            }
+          }
+        }
+      }
+      #pills-contact{
+        ul{
+          li{
+            padding-top:15px;
+            span{
+              font-size:16px;
+            }
+          }
+        }
+      }
+    }
+  }
+  #gallery{
+    position: relative;
+    top: 120px;
+    padding-top: 60px;
+    .zoom{
+      -webkit-transition: all .3s ease-in-out;
+      -moz-transition: all .3s ease-in-out;
+      -o-transition: all .3s ease-in-out;
+      -ms-transition: all .3s ease-in-out;
+    }
+    .transition{
+      -webkit-transform: scale(1.1);
+      -moz-transform: scale(1.1);
+      -o-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+    .thumb{
+      margin-bottom: 20px;
+      display:flex;
+      justify-content:center;
+    }
+    h3{
+      color:$bastion-blue;
+      font-size:28px;
+      font-weight:bold;
+      text-align:center;
+      padding-bottom:50px;
+    }
+    h4{
+      font-size:16px;
+      color:$bastion-blue;
+      text-align:center;
+      font-style: italic;
+      padding-top: 10px;
+    }
+  }
+  #mminvest{
+    position:relative;
+    top:120px;
+    padding-top:60px;
+    .blue{
+      background-color: $bastion-blue;
+      height: 750px;
+      width: 100%;
+      float: right;
+    }
+    h4{
+      font-size:16px;
+      color:$bastion-red;
+      font-weight:bold;
+      margin-bottom:12px;
+    }
+    h3{
+      font-size:36px;
+      color:$bastion-blue;
+      font-weight:bold;
+      margin-bottom:30px;
+    }
+    p{
+      font-size:15px;
+      color:$bastion-blue;
+    }
+    h5{
+      font-size:15px;
+      color:$bastion-red;
+      font-weight:bold;
+      margin-bottom:20px;
+      margin-top:40px;
+    }
+    h6{
+      font-size:11px;
+      color:$bastion-blue;
+      font-weight:bold;
+      margin-top:14px;
+      text-align:center;
+    }
+    .realisedProjects{
+      img{
+        display:block;
+        margin:0 auto;
+      }
+    }
+    .realisingProjects{
+      img{
+        display:block;
+        margin:0 auto;
+      }
+    }
+    .mminvestinfo{
+      position:absolute;
+      top:0;
+      margin-left:50%;
+      transform:translateX(-50%);
+      .investlogo{
+        margin-top: 135px;
+        margin-left: 40px;
+      }
+      .mminvestpattern{
+        img{
+          position: relative;
+          left: 220px;
+        }
+      }
+    }
+  }
+}

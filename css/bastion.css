@@ -1,0 +1,330 @@
+* {
+  font-family: 'Montserrat', sans-serif; }
+
+.hidden {
+  overflow: hidden; }
+
+#wrapper .navbar {
+  padding: 20px 100px;
+  background-color: white; }
+  #wrapper .navbar .navbar-nav a {
+    color: #233e51;
+    font-weight: bold;
+    margin-left: 12px; }
+    @media screen and (max-width: 1280px) {
+      #wrapper .navbar .navbar-nav a {
+        font-size: 12px; } }
+    @media screen and (max-width: 1130px) {
+      #wrapper .navbar .navbar-nav a {
+        font-size: 10px;
+        margin-left: 7px; } }
+    #wrapper .navbar .navbar-nav a:hover {
+      color: #be151b; }
+  #wrapper .navbar .navbar-nav .active a {
+    color: #be151b; }
+    #wrapper .navbar .navbar-nav .active a img {
+      -webkit-filter: invert(65%) grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(400%) contrast(2);
+      filter: invert(70%) grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(400%) contrast(2);
+      margin-right: 10px; }
+  #wrapper .navbar .navbar-nav .contact {
+    background-color: #75c34a;
+    color: white;
+    box-shadow: -1px 2px 15px 2px lightgrey;
+    transition: all .2s ease-in-out; }
+    #wrapper .navbar .navbar-nav .contact:hover {
+      color: white;
+      transform: scale(1.1); }
+#wrapper #header {
+  position: relative;
+  top: 88px; }
+  #wrapper #header .carousel-item-next, #wrapper #header .carousel-item-prev, #wrapper #header .carousel-item.active {
+    display: flex !important; }
+  #wrapper #header .container-fluid {
+    height: 100%;
+    padding: 0; }
+    #wrapper #header .container-fluid .carousel {
+      height: 100%; }
+      #wrapper #header .container-fluid .carousel .carousel-inner {
+        height: 100%; }
+        #wrapper #header .container-fluid .carousel .carousel-inner .active {
+          display: flex !important;
+          align-items: center;
+          justify-content: center;
+          min-height: 100vh;
+          background-size: cover;
+          background-position: center center; }
+          #wrapper #header .container-fluid .carousel .carousel-inner .active .carouselContent {
+            position: absolute; }
+            #wrapper #header .container-fluid .carousel .carousel-inner .active .carouselContent h6 {
+              color: #be151b;
+              font-size: 18px;
+              text-align: center;
+              font-weight: bold; }
+            #wrapper #header .container-fluid .carousel .carousel-inner .active .carouselContent h3 {
+              font-size: 48px;
+              color: white;
+              text-align: center;
+              font-weight: bold; }
+              @media screen and (max-width: 1130px) {
+                #wrapper #header .container-fluid .carousel .carousel-inner .active .carouselContent h3 {
+                  font-size: 32px !important; } }
+              @media screen and (max-width: 992px) {
+                #wrapper #header .container-fluid .carousel .carousel-inner .active .carouselContent h3 {
+                  font-size: 24px !important; } }
+            #wrapper #header .container-fluid .carousel .carousel-inner .active .carouselContent .carouselButton {
+              display: block;
+              margin: 0 auto;
+              color: white;
+              background-color: #be151b;
+              border: none;
+              outline: none;
+              padding: 14px 50px;
+              cursor: pointer; }
+        #wrapper #header .container-fluid .carousel .carousel-inner .carousel-item {
+          align-items: center;
+          justify-content: center;
+          min-height: 100vh;
+          background-size: cover;
+          background-position: center center; }
+          #wrapper #header .container-fluid .carousel .carousel-inner .carousel-item .carouselContent {
+            position: absolute; }
+            #wrapper #header .container-fluid .carousel .carousel-inner .carousel-item .carouselContent h6 {
+              color: #be151b;
+              font-size: 18px;
+              text-align: center;
+              font-weight: bold; }
+            #wrapper #header .container-fluid .carousel .carousel-inner .carousel-item .carouselContent h3 {
+              font-size: 48px;
+              color: white;
+              text-align: center;
+              font-weight: bold; }
+              @media screen and (max-width: 1130px) {
+                #wrapper #header .container-fluid .carousel .carousel-inner .carousel-item .carouselContent h3 {
+                  font-size: 32px !important; } }
+              @media screen and (max-width: 992px) {
+                #wrapper #header .container-fluid .carousel .carousel-inner .carousel-item .carouselContent h3 {
+                  font-size: 24px !important; } }
+            #wrapper #header .container-fluid .carousel .carousel-inner .carousel-item .carouselContent .carouselButton {
+              display: block;
+              margin: 0 auto;
+              color: white;
+              background-color: #be151b;
+              border: none;
+              outline: none;
+              padding: 14px 50px;
+              cursor: pointer; }
+#wrapper #aboutus {
+  position: relative;
+  top: 88px;
+  margin-top: 60px; }
+  #wrapper #aboutus .container-fluid {
+    overflow: hidden; }
+  #wrapper #aboutus h6 {
+    font-size: 18px;
+    color: #be151b;
+    font-weight: bold; }
+  #wrapper #aboutus h3 {
+    font-size: 36px;
+    color: #233e51;
+    font-weight: bold;
+    margin-top: 20px; }
+  #wrapper #aboutus p {
+    font-size: 16px;
+    color: #233e51;
+    padding-right: 20px;
+    margin-top: 20px; }
+  #wrapper #aboutus .abouticon h6 {
+    font-size: 16px; }
+  #wrapper #aboutus .abouticon p {
+    margin: 0; }
+  #wrapper #aboutus .aboutimage {
+    position: absolute;
+    left: 60px;
+    top: 50px;
+    height: 325px;
+    width: 525px;
+    box-shadow: 1px 1px 40px 10px lightgrey; }
+  #wrapper #aboutus .aboutlogo {
+    position: absolute;
+    left: 75px;
+    top: 60px; }
+  #wrapper #aboutus .aboutMore {
+    position: absolute;
+    bottom: 0;
+    left: 60px;
+    width: 500px;
+    display: flex; }
+    #wrapper #aboutus .aboutMore .textarea {
+      background-color: #789551;
+      width: 80%;
+      height: 55px; }
+      #wrapper #aboutus .aboutMore .textarea h6 {
+        color: white;
+        margin: 0;
+        padding-left: 20px;
+        font-weight: 600; }
+    #wrapper #aboutus .aboutMore button {
+      color: white;
+      background-color: #233e51;
+      border: none;
+      outline: none;
+      width: 50px;
+      font-size: 32px;
+      cursor: pointer; }
+  #wrapper #aboutus .aboutNumbers {
+    margin-top: 80px;
+    text-align: center; }
+    #wrapper #aboutus .aboutNumbers img {
+      display: block;
+      margin: 0 auto; }
+    #wrapper #aboutus .aboutNumbers h5 {
+      margin-top: 15px;
+      font-weight: bold;
+      color: #233e51; }
+    #wrapper #aboutus .aboutNumbers p {
+      margin-top: 8px;
+      font-size: 14px;
+      font-weight: bold;
+      padding-right: 0;
+      color: #233e51; }
+#wrapper #advantages {
+  position: relative;
+  top: 120px;
+  background-color: #233e51; }
+  #wrapper #advantages .container-fluid {
+    padding-top: 60px; }
+  #wrapper #advantages .left {
+    padding-right: 0;
+    padding-top: 40px; }
+  #wrapper #advantages .pattern {
+    float: right; }
+  #wrapper #advantages .advantageimage {
+    position: absolute;
+    top: 90px;
+    right: 54px;
+    height: 325px;
+    width: 525px; }
+  #wrapper #advantages .right {
+    padding-top: 40px; }
+    #wrapper #advantages .right h6 {
+      font-size: 16px;
+      color: #be151b;
+      text-align: right;
+      font-weight: bold; }
+    #wrapper #advantages .right h3 {
+      font-size: 36px;
+      color: white;
+      font-weight: bold;
+      text-align: right; }
+    #wrapper #advantages .right .mb-3 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 30px;
+      margin-left: 50px; }
+    #wrapper #advantages .right li a {
+      color: white;
+      font-size: 14px;
+      font-weight: bold; }
+    #wrapper #advantages .right .nav-link.active {
+      background-color: #be151b; }
+    #wrapper #advantages .right .tab-content {
+      margin-left: 32px; }
+    #wrapper #advantages .right .tab-pane ul li {
+      color: #be151b; }
+    #wrapper #advantages .right .tab-pane ul li span {
+      color: white;
+      font-size: 12px; }
+    #wrapper #advantages .right .tab-pane ul strong {
+      font-size: 16px; }
+    #wrapper #advantages .right #pills-profile ul li {
+      padding-top: 15px; }
+      #wrapper #advantages .right #pills-profile ul li span {
+        font-size: 16px; }
+    #wrapper #advantages .right #pills-contact ul li {
+      padding-top: 15px; }
+      #wrapper #advantages .right #pills-contact ul li span {
+        font-size: 16px; }
+#wrapper #gallery {
+  position: relative;
+  top: 120px;
+  padding-top: 60px; }
+  #wrapper #gallery .zoom {
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out; }
+  #wrapper #gallery .transition {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1); }
+  #wrapper #gallery .thumb {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center; }
+  #wrapper #gallery h3 {
+    color: #233e51;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 50px; }
+  #wrapper #gallery h4 {
+    font-size: 16px;
+    color: #233e51;
+    text-align: center;
+    font-style: italic;
+    padding-top: 10px; }
+#wrapper #mminvest {
+  position: relative;
+  top: 120px;
+  padding-top: 60px; }
+  #wrapper #mminvest .blue {
+    background-color: #233e51;
+    height: 750px;
+    width: 100%;
+    float: right; }
+  #wrapper #mminvest h4 {
+    font-size: 16px;
+    color: #be151b;
+    font-weight: bold;
+    margin-bottom: 12px; }
+  #wrapper #mminvest h3 {
+    font-size: 36px;
+    color: #233e51;
+    font-weight: bold;
+    margin-bottom: 30px; }
+  #wrapper #mminvest p {
+    font-size: 15px;
+    color: #233e51; }
+  #wrapper #mminvest h5 {
+    font-size: 15px;
+    color: #be151b;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 40px; }
+  #wrapper #mminvest h6 {
+    font-size: 11px;
+    color: #233e51;
+    font-weight: bold;
+    margin-top: 14px;
+    text-align: center; }
+  #wrapper #mminvest .realisedProjects img {
+    display: block;
+    margin: 0 auto; }
+  #wrapper #mminvest .realisingProjects img {
+    display: block;
+    margin: 0 auto; }
+  #wrapper #mminvest .mminvestinfo {
+    position: absolute;
+    top: 0;
+    margin-left: 50%;
+    transform: translateX(-50%); }
+    #wrapper #mminvest .mminvestinfo .investlogo {
+      margin-top: 135px;
+      margin-left: 40px; }
+    #wrapper #mminvest .mminvestinfo .mminvestpattern img {
+      position: relative;
+      left: 220px; }
+
+/*# sourceMappingURL=bastion.css.map */
