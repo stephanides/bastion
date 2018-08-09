@@ -1,0 +1,134 @@
+<!DOCTYPE HTML>
+
+<html>
+  <head>
+    <title>Bastion</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="../css/bastion.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet">
+    <link rel='stylesheet' href='//cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  </head>
+  <body class="homepage is-preload">
+    <div id="wrapper">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+          <div class="container p-0">
+            <a class="navbar-brand" href="../#home"><img src='../images/icons/logo.png' alt='Bastion'></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="../#aboutus" onclick="goAbout()"><img src='../images/icons/home.svg' alt='home'>O projekte</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../#advantages" onclick="goAdvantages()">Výhody</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../#spaces" >Naše priestory</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../#map" onclick="goLocation()">Lokalita</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../#gallery" onclick="goGallery()">Galéria</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../#mminvest" onclick="goMmInvest()">O nás</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../#news" onclick="goNews()">Aktuality</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link contact" href="../#contactus">Kontaktujte nás</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <section class = "headerActuality">
+          <div class="container-fluid" style="background-image: url('images/0.jpg');background-size: cover">
+            <div class="container justify-content-center align-items-center pt-4 pb-4 "  >
+              <div class="row">
+                <h4 class="w-100 text-center pt-100 pb-100">Archív aktualít</h4>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="actualityArchiveContent">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="aktualita col-lg-4 col-12" onclick="window.location.href='zahajeny-zaciatok-vystavby'">
+                <div class="position-relative">
+                  <img class="w-100" src="../images/aktuality/01.jpg">
+                  <div class="hoverbckgrnd">
+                    <i class="fas fa-plus"></i>
+                  </div>
+                </div>
+                <h6 class="pt-4">Zahájenie výstavby administratívneho - obchodného centra BASTION</h6>
+                <p class="pt-3"><img class="mr-1" src="../images/icons/clock.png">10. Máj 2018</p>
+              </div>
+              <div class="aktualita col-lg-4 col-12" onclick="window.location.href='zelene-administrativne-budovy'">
+                <div class="position-relative">
+                  <img class="w-100" src="../images/aktuality/02.jpg">
+                  <div class="hoverbckgrnd">
+                    <i class="fas fa-plus"></i>
+                  </div>
+                </div>
+                <h6 class="pt-4">Prečo bude BASTION CENTER zelenou budovou?</h6>
+                <p class="pt-3"><img class="mr-1" src="../images/icons/clock.png">10. Jún 2018</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="footer">
+          <div class="container">
+            <div class="row justify-content-between">
+            <div class="col-lg-2 col-12 footerlogo">
+              <img src='images/icons/footerlogo.png' alt='Bastion'>
+            </div>
+              
+              <div class="bastionffice col-lg-3 col-12" >
+                <h6>BASTION OFFICE CENTER</h6>
+                <p>Administratívno-obchodné centrum</p>
+                <p>Továrenská ul.</p>
+                <p>040 01 Košice</p>
+              </div>
+              <div class="footerdeveloper col-lg-3 col-12" >
+                <h6>DEVELOPER</h6>
+                <p>MM Invest Košice, s.r.o.</p>
+                <p>Kováčska 19, 040 01 Košice</p>
+                <p>Tel./fax: +421 55 622 03 94</p>
+                <p>info@mminvest.sk</p>
+              </div>
+              <div class="col-lg-3 d-flex col-12 footerother">
+                <div class="">
+                <h6>OSTATNÉ</h6>
+                <p>Zásady ochrany súkromia</p>
+                <p>Ochrana osobných údajov</p>
+                <p>Dokumenty</p>
+                <p>Zmluvy</p>
+              </div>
+              <div class="footersocial">
+                <h6>SLEDUJTE NÁS</h6>
+                <a href="">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                
+              </div>
+              </div>
+              
+            </div>
+          </div>
+        </section>
+    </div>
+    <!-- Scripts -->
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+  </body>
+</html>

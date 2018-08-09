@@ -7,48 +7,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="css/bastion.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700,900" rel="stylesheet">
     <link rel='stylesheet' href='//cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
   </head>
   <body class="homepage is-preload">
     <div id="wrapper">
         <nav class="navbar navbar-expand-lg navbar-light fixed-top">
           <div class="container p-0">
-            <a class="navbar-brand" href="#"><img src='images/icons/logo.png' alt='Bastion'></a>
+            <a class="navbar-brand" href="#" onclick="goHome()"><img src='images/icons/logo.png' alt='Bastion'></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                  <a class="nav-link" href="#"><img src='images/icons/home.svg' alt='home'>O projekte</a>
+                  <a class="nav-link" href="#" onclick="goAbout()"><img src='images/icons/home.svg' alt='home'>O projekte</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Výhody</a>
+                  <a class="nav-link" href="#advantages" onclick="goAdvantages()">Výhody</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Naše priestory</a>
+                  <a class="nav-link" href="#" onclick="goSpaces()">Naše priestory</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Lokalita</a>
+                  <a class="nav-link" href="#" onclick="goLocation()">Lokalita</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Galéria</a>
+                  <a class="nav-link" href="#" onclick="goGallery()">Galéria</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">O nás</a>
+                  <a class="nav-link" href="#" onclick="goMmInvest()">O nás</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Aktuality</a>
+                  <a class="nav-link" href="#" onclick="goNews()">Aktuality</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link contact" href="#">Kontaktujte nás</a>
+                  <a class="nav-link contact" href="#" onclick="goContact()">Kontaktujte nás</a>
+                </li>
+                <li class="nav-item fb">
+                  <a href=""><i class="fab fa-facebook-f"></i></a>
                 </li>
               </ul>
             </div>
           </div>
         </nav>
-        <section id = "header">
+        <section id = "header" name="home">
           <div class="container-fluid">
             <div id = "headerCarousel" class="carousel slide" data-ride="carousel">
               <div class="carousel-inner">
@@ -57,8 +61,8 @@
                   <div class="container carouselContent">
                     <div>
                       <h6>BASTION OFFICE CENTER</h6>
-                      <h3>KANCELÁRIE SO SÁLAVÝM VYKUROVANÍM A CHLADENÍM</h3>
-                      <button class="carouselButton" onclick="goAdvantages()">VÝHODY</button>
+                      <h3>PRENÁJOM KANCELÁRIÍ A OBCHODNÝCH PRIESTOROV V SRDCI MESTA KOŠICE</h3>
+                      <button class="carouselButton" onclick="goAbout()">O PROJEKTE</button>
                     </div>
                   </div>
                 </div>
@@ -77,14 +81,14 @@
                   <div class="container carouselContent">
                     <div>
                       <h6>BASTION OFFICE CENTER</h6>
-                      <h3>KANCELÁRIE SO SÁLAVÝM VYKUROVANÍM A CHLADENÍM</h3>
-                      <button class="carouselButton" onclick="goAdvantages()">VÝHODY</button>
+                      <h3>UCHÁDZAME SA O PRESTÍŽNY CERTIFIKÁT LEED</h3>
+                      <button class="carouselButton" onclick="goNews()">AKTUALITY</button>
                     </div>
                   </div>
                 </div>
               </div>
               <a class="carousel-control-prev" href="#headerCarousel" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="carousel-control-prev-icon" aria-hidden="true" style="background-image: url(data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' f…3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E);"></span>
                 <span class="sr-only">Previous</span>
               </a>
               <a class="carousel-control-next" href="#headerCarousel" role="button" data-slide="next">
@@ -94,11 +98,11 @@
             </div>
           </div>
         </section>
-        <section id = "aboutus">
+        <section id = "aboutus" name="aboutus">
           <div class="container-fluid hidden">
             <div class="container">
               <div class="row">
-                <div class="col-md-6 col-12 order-2">
+                <div class="col-md-6 col-12 order-2 aboutuslogopicture">
                   <img src='images/aboutpattern.png' alt='Bastion'>
                   <img src='images/aboutimage.png' class="aboutimage" alt='Bastion'>
                   <img src='images/icons/aboutlogo.png' class="aboutlogo" alt='Bastion'>
@@ -106,14 +110,21 @@
                     <div class="textarea d-flex align-items-center">
                       <h6>ZELENÁ PRE VÁŠ BIZNIS</h6>
                     </div>
-                    <button>+</button>
+                    <button onclick="openmore(0)">+</button>
+                  </div>
+                  <div class="aboutInfo" id="aboutInfo">
+                    <div class="close" onclick="openmore(1)">X</div>
+                    <h4>ZELENÁ PRE VÁŠ BIZNIS</h4>
+                    <h6>BASTION OFFICE CENTER</h6>
+                    <p>Medzi hlavné výhody zelenej budovy s certifikátom LEED GOLD patria nižšie prevádzkové náklady, kvalitnejšie pracovné prostredie a v neposlednom rade vysoká prestíž budovy.</p>
+                    <a href="">VIAC V AKTUALITÁCH</a>
                   </div>
                 </div>
-                <div class="col-md-6 col-12">
+                <div class="col-md-6  col-12">
                   <h6>O PROJEKTE</h6>
                   <h3>Zdravé pracovné prostredie v centre Košíc</h3>
-                  <p>Hľadáte administrtívne priestory s výhodnou lokalitou? Chcete sa každý deň tešiť do svojej novej kancelárie? <br> <strong>Vyberte si Bastion Center.</strong> Moderné biznis centrum priamo v srdci mesta Košice. Ide o unikátnu zelenú stavbu, ktorá šetrí prírodu aj vašu peňaženku. Komplex ponúka priestory pre kancelárie, služby aj obchod. Použitím najmodernejších technológií a materiálov sporí režijné náklady a vytvára zdravé pracovné prostredie.</p>
-                  <div class="row mb-4">
+                  <p>Hľadáte administratívne priestory s výhodnou lokalitou? Chcete sa každý deň tešiť do svojej novej kancelárie? <br> <strong>Vyberte si Bastion Center.</strong> Moderné biznis centrum priamo v srdci mesta Košice. Ide o unikátnu zelenú stavbu, ktorá šetrí prírodu aj vašu peňaženku. Komplex ponúka priestory pre kancelárie, služby aj obchod. Použitím najmodernejších technológií a materiálov sporí režijné náklady a vytvára zdravé pracovné prostredie.</p>
+                  <div class="row mb-4 ">
                     <div class="col-6 mt-4 d-flex abouticon">
                       <img src='images/icons/truck.png' class="mr-2" style="height: 42px; width: 52px;" alt='Bastion'>
                       <div>
@@ -130,35 +141,34 @@
                     </div>
                   </div>
                 </div>
-                
               </div>
               <div class="row aboutNumbers">
-                <div class="col-4">
+                <div class="col-md-4 col-6">
                   <img src='images/icons/office.png' alt='Bastion'>
                   <h5><span class="count">9500</span> m2</h5>
                   <p>KANCELÁRSKYCH PRIESTOROV</p>
                 </div>
-                <div class="col-4">
+                <div class="col-md-4 col-6">
                   <img src='images/icons/shop.png' alt='Bastion'>
                   <h5><span class="count">1836</span> m2</h5>
                   <p>PRIESTOROV PRE OBCHOD</p>
                 </div>
-                <div class="col-4">
+                <div class="col-md-4 col-6">
                   <img src='images/icons/carpark.png' alt='Bastion'>
                   <h5><span class="count">234</span></h5>
                   <p>PARKOVACÍCH MIEST</p>
                 </div>
-                <div class="col-4">
+                <div class="col-md-4 col-6">
                   <img src='images/icons/bicycle.png' alt='Bastion'>
                   <h5><span class="count">50</span></h5>
                   <p>MIEST NA BICYKLE</p>
                 </div>
-                <div class="col-4">
+                <div class="col-md-4 col-6">
                   <img src='images/icons/elevator.png' alt='Bastion'>
                   <h5><span class="count">5</span></h5>
                   <p>VÝŤAHOV</p>
                 </div>
-                <div class="col-4">
+                <div class="col-md-4 col-6">
                   <img src='images/icons/barier.png' alt='Bastion'>
                   <h5><span class="count">1</span></h5>
                   <p>BEZBARIÉROVÝ VSTUP</p>
@@ -167,7 +177,7 @@
             </div>
           </div>
         </section>
-        <section id = "advantages">
+        <section id = "advantages" name="advantages">
           <div class="container-fluid">
             <div class="container">
               <div class="row">
@@ -195,10 +205,10 @@
                         <li><span><strong>Moderný spôsob vykurovania aj chladenia</strong><br>sálavým podlahovým systémom PYD &reg; vytvára v lete aj v zime priaznivú klímu a tepelnú pohodu bez prejavov prievanu. Na rozdiel od klimatizácie nepôsobí agresívne.</span></li>
                       
                       <li><span><strong>Voľné chladenie "free - cooling"</strong><br>využíva vodu z podzemného zdroja v kombinácii s tepelným čepadlom, vďaka čomu šetrí prevádzkové náklady.</span></li>
-                      <li><span><strong>Energeticky úsporné LED svietidlá</strong> nájdete v celej budove</span></li>
+                      <li><span><strong>Energeticky úsporné LED svietidlá</strong> nájdete v celej budove.</span></li>
                       <li><span><strong>Inteligentné ovládanie intenzity svetla</strong><br>pomocou technológie Screen Vám zabezpečí prirodzené svetlo počas celého dňa.</span></li>
                       <li><span><strong>Kvalitné, zdravé ovzdušie</strong><br>Nadštandardná výmena vzduchu. Sledujeme a následne upravujeme hodnoty oxidu uhličitého a vlhkosti. Vetranie realizujeme formou rekuperácie, ale aj možnou prirodzenou výmenou vzduchu - vetraním oknami.</span></li>
-                      <li><span><strong>Inteligentný systém riadenia</strong> vnútorného prostredia v budove (BMS)</span></li>
+                      <li><span><strong>Inteligentný systém riadenia</strong> vnútorného prostredia v budove (BMS).</span></li>
                       </ul>
                     </div>
                     <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
@@ -225,39 +235,160 @@
             </div>
           </div>
         </section>
-        <section id = "gallery">
+        <section id = "spaces" name="spaces">
+          <div class="container">
+            <h4>NAŠE PRIESTORY</h4>
+            <h3>Zobraziť ponuku</h3>
+            <div class="row">
+              <div class="col-12">
+                <p class="text-right">Voľné priestory spolu: x m2</p>
+                <p class="text-right">Obsadené priestory spolu: x m2</p>
+              </div>
+              <div class="col-12 pb-4 pl-0 pr-0">
+                <img class="w-50 pattern" src='images/spacespattern.png' class="pattern" alt='Bastion'>
+                <div class="building">
+                  <img class="w-100 budova" src='images/budova.png' class="pattern" alt='Bastion'>
+                  <img class="w-100" id="first" src='images/first.png' class="pattern" alt='Bastion'>
+                  <img class="w-100" id="second" src='images/second.png' class="pattern" alt='Bastion'>
+                  <img class="w-100" id="third" src='images/second.png' class="pattern" alt='Bastion'>
+                  <img class="w-100" id="fourth" src='images/second.png' class="pattern" alt='Bastion'>
+                  <img class="w-100" id="fifth" src='images/second.png' class="pattern" alt='Bastion'>
+                </div>
+                
+              </div>
+              
+            </div>
+            <div class="row pt-4">
+              <div class="col-md-4 col-12 podlazieButton volne d-flex pb-3 pr-0 pt-4" data-toggle="modal" data-target="#firstfloor" onmouseover="showFirst(0)" onmouseleave="showFirst(1)" >
+                <div class="podlazie pt-2 pb-2">1 NP</div>
+                <div class="text d-flex justify-content-between align-items-center pl-2 pr-2">
+                  <span class="">VOĽNÉ</span>
+                  <span class=" bigger">OBCHODNÉ PRIESTORY</span>
+                </div>
+              </div>
+              <div class="col-md-4 col-12 podlazieButton obsadene d-flex pb-3 pr-0 pt-4" data-toggle="modal" data-target="#secondfloor" onmouseover="showSecond(0)" onmouseleave="showSecond(1)">
+                <div class="podlazie pt-2 pb-2">2 NP</div>
+                <div class="text d-flex justify-content-between align-items-center pl-2 pr-2">
+                  <span class="">OBSADENÉ</span>
+                  <span class=" bigger">KANCELÁRSKE PRIESTORY</span>
+                </div>
+              </div>
+              <div class="col-md-4 col-12 podlazieButton obsadene d-flex pb-3 pr-0 pt-4" data-toggle="modal" data-target="#thirdfloor" onmouseover="showThird(0)" onmouseleave="showThird(1)">
+                <div class="podlazie pt-2 pb-2">3 NP</div>
+                <div class="text d-flex justify-content-between align-items-center pl-2 pr-2">
+                  <span class="">OBSADENÉ</span>
+                  <span class=" bigger">KANCELÁRSKE PRIESTORY</span>
+                </div>
+              </div>
+              <div class="col-md-4 col-12 podlazieButton obsadene d-flex pb-3 pr-0 "  data-toggle="modal" data-target="#fourthfloor" onmouseover="showFourth(0)" onmouseleave="showFourth(1)">
+                <div class="podlazie pt-2 pb-2">4 NP</div>
+                <div class="text d-flex justify-content-between align-items-center pl-2 pr-2">
+                  <span class="">OBSADENÉ</span>
+                  <span class=" bigger">KANCELÁRSKE PRIESTORY</span>
+                </div>
+              </div>
+              <div class="col-md-4 col-12 podlazieButton obsadene d-flex pb-3 pr-0"  data-toggle="modal" data-target="#fifthfloor" onmouseover="showFifth(0)" onmouseleave="showFifth(1)">
+                <div class="podlazie pt-2 pb-2">5 NP</div>
+                <div class="text d-flex justify-content-between align-items-center pl-2 pr-2">
+                  <span class="">OBSADENÉ</span>
+                  <span class=" bigger">KANCELÁRSKE PRIESTORY</span>
+                </div>
+              </div>
+              <div class="col-md-4 col-12 podlazieButton volne d-flex pb-3 pr-0" data-toggle="modal" data-target="#sixthfloor">
+                <div class="podlazie pt-2 pb-2">6 NP</div>
+                <div class="text d-flex justify-content-between align-items-center pl-2 pr-2">
+                  <span class="">VOĽNÉ</span>
+                  <span class=" bigger">KANCELÁRSKE PRIESTORY</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="map" name="map">
+            <div class="background">
+            </div>
+          <div class="container">
+            <div class="row">
+              <h3 class="w-100">IDEÁLNA LOKALITA PRE VAŠU FIRMU V CENTRE MESTA</h3>
+            </div>
+            <div class="row mapbuttons justify-content-between mt-4 mb-4">
+              <ul class="nav nav-pills mb-3 w-100 justify-content-center" id="pills-tab" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#doprava" role="tab" aria-controls="pills-home" aria-selected="true" onclick="showMarkers(0)">DOPRAVNÉ SPOJENIA</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#park" role="tab" aria-controls="pills-profile" aria-selected="false" onclick="showMarkers(1)">PARKOVISKO</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#restauracie" role="tab" aria-controls="pills-contact" aria-selected="false" onclick="showMarkers(2)">REŠTAURÁCIE</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#kaviarne" role="tab" aria-controls="pills-contact" aria-selected="false" onclick="showMarkers(3)">KAVIARNE</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#bankomaty" role="tab" aria-controls="pills-contact" aria-selected="false" onclick="showMarkers(4)">BANKOMATY</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#posta" role="tab" aria-controls="pills-contact" aria-selected="false" onclick="showMarkers(5)">POŠTA</a>
+                </li>
+              </ul>
+            </div>
+            <div class="row pb-100">
+              <div id="bastionMap"></div>
+            </div>
+          </div>
+        </section>
+        <section id = "gallery" name="gallery">
           <div class = "container-fluid gallery" >
             <h3>GALÉRIA</h3>
             <div class="container">
               <div class = "row">
                 <div class = "col-lg-4 col-md-4 col-sm-6 thumb">
-                  <a href="images/gallery/01.jpg" data-fancybox="images" class="fancybox">
-                    <img src="images/gallery/01.jpg" alt="" class="zoom img-fluid">
+                  <a href="images/gallery/04.jpeg" data-fancybox="images" class="fancybox">
+                    <img src="images/gallery/04.jpeg" alt="" class="zoom img-fluid">
+                    <div class="highlight">
+                      <i class="fas fa-plus"></i>
+                    </div>
                   </a>
                 </div>
                 <div class = "col-lg-4 col-md-4 col-sm-6 thumb">
-                  <a href="images/gallery/02.jpg" data-fancybox="images" class="fancybox">
-                    <img src="images/gallery/02.jpg" alt="" class="zoom img-fluid">
+                  <a href="images/gallery/04.jpeg" data-fancybox="images" class="fancybox">
+                    <img src="images/gallery/04.jpeg" alt="" class="zoom img-fluid">
+                    <div class="highlight">
+                      <i class="fas fa-plus"></i>
+                    </div>
                   </a>
                 </div>
                 <div class = "col-lg-4 col-md-4 col-sm-6 thumb">
-                  <a href="images/gallery/03.jpg" data-fancybox="images" class="fancybox">
-                  <img src="images/gallery/03.jpg" alt="" class="zoom img-fluid">
+                  <a href="images/gallery/04.jpeg" data-fancybox="images" class="fancybox">
+                  <img src="images/gallery/04.jpeg" alt="" class="zoom img-fluid">
+                  <div class="highlight">
+                    <i class="fas fa-plus"></i>
+                  </div>
                   </a>
                 </div>
                 <div class = "col-lg-4 col-md-4 col-sm-6 thumb">
-                  <a href="images/gallery/04.jpg" data-fancybox="images" class="fancybox">
-                    <img src="images/gallery/04.jpg" alt="" class="zoom img-fluid">
+                  <a href="images/gallery/04.jpeg" data-fancybox="images" class="fancybox">
+                    <img src="images/gallery/04.jpeg" alt="" class="zoom img-fluid">
+                    <div class="highlight">
+                      <i class="fas fa-plus"></i>
+                    </div>
                   </a>
                 </div>
                 <div class = "col-lg-4 col-md-4 col-sm-6 thumb">
-                  <a href="images/gallery/05.jpg" data-fancybox="images" class="fancybox">
-                    <img src="images/gallery/05.jpg" alt="" class="zoom img-fluid">
+                  <a href="images/gallery/05.jpeg" data-fancybox="images" class="fancybox">
+                    <img src="images/gallery/05.jpeg" alt="" class="zoom img-fluid">
+                    <div class="highlight">
+                      <i class="fas fa-plus"></i>
+                    </div>
                   </a>  
                 </div>
                 <div class = "col-lg-4 col-md-4 col-sm-6 thumb">
-                  <a href="images/gallery/06.jpg" data-fancybox="images" class="fancybox">
-                    <img src="images/gallery/06.jpg" alt="" class="zoom img-fluid">
+                  <a href="images/gallery/06.jpeg" data-fancybox="images" class="fancybox">
+                    <img src="images/gallery/06.jpeg" alt="" class="zoom img-fluid">
+                    <div class="highlight">
+                      <i class="fas fa-plus"></i>
+                    </div>
                   </a>
                 </div>
               </div>
@@ -265,51 +396,51 @@
             <h4>Vizualizácie sú ilustračného charakteru</h4>
           </div>
         </section>
-        <section id="mminvest">
+        <section id="mminvest" name="mminvest">
           <div class="container-fluid hidden position-relative">
             <div class="row">
-              <div class="col-6">
+              <div class="col-md-6 col-12">
               </div>
-              <div class="col-6 pr-0">
+              <div class="col-md-6 col-12 pr-0">
                 <div class="blue"></div>
               </div>
             </div>
              <div class="container mminvestinfo">
               <div class="row">
-                <div class="col-6">
+                <div class="col-xl-6 col-12 ">
                   <h4>O nás</h4>
                   <h3>Na MM Invest sa môžete spoľahnúť</h3>
-                  <p>Spoločnost MM Invest s.r.o. pôsobí v oblsti developerskej činnosti v rámci Košíc už 13 rokov. V našom portfóliu sa nachádzajú kancelárske, komerčné priestory v polyfunkčných objektoch, rodinné a bytové domy.</p>
+                  <p>Spoločnosť MM Invest s.r.o. pôsobí v oblasti developerskej činnosti v rámci Košíc už 13 rokov. V našom portfóliu sa nachádzajú kancelárske, komerčné priestory v polyfunkčných objektoch, rodinné a bytové domy.</p>
                   <p>Snažíme sa byť lídrom v kvalite, používame kvalitné stavebné materiály, využívame nové technológie, klientom ponúkame nadštandardné služby.</p>
                   <div class="realisedProjects">
                     <h5>Zrealizované projekty v číslach</h5>
                     <div class="row">
-                      <div class="col-4">
+                      <div class="col-sm-4 col-12">
                         <img src='images/icons/flat.png' alt='Bastion'>
                         <h6>333 postavených bytov</h6>
                         <h6>Celková rozloha: 39 300 m2</h6>
                       </div>
-                      <div class="col-4">
+                      <div class="col-sm-4 col-12">
                         <img src='images/icons/house.png' alt='Bastion'>
-                        <h6>333 postavených bytov</h6>
-                        <h6>Celková rozloha: 39 300 m2</h6>
+                        <h6>152 postavených domov</h6>
+                        <h6>Celková rozloha: 18 800 m2</h6>
                       </div>
-                      <div class="col-4">
+                      <div class="col-sm-4 col-12">
                         <img src='images/icons/building.png' alt='Bastion'>
-                        <h6>333 postavených bytov</h6>
-                        <h6>Celková rozloha: 39 300 m2</h6>
+                        <h6>Kancelárie / obchod</h6>
+                        <h6>Celková rozloha: 4 100 m2</h6>
                       </div>
                     </div>
                   </div>
                   <div class="realisingProjects">
                     <h5>Práve realizované projekty v číslach</h5>
                     <div class="row">
-                      <div class="col-4">
+                      <div class="col-sm-4 col-12">
                         <img src='images/icons/flat.png' alt='Bastion'>
                         <h6>134 bytov</h6>
                         <h6>Celková rozloha: 12 800 m2</h6>
                       </div>
-                      <div class="col-4">
+                      <div class="col-sm-4 col-12">
                         <img src='images/icons/building.png' alt='Bastion'>
                         <h6>Kancelária / obchod</h6>
                         <h6>Celková rozloha: 19 500 m2</h6>
@@ -318,18 +449,367 @@
                   </div>
                   <div class="realisingProjects"></div> 
                 </div>
-                <div class="col-6">
+                <div class="col-xl-6 col-12 mmblue">
                   <div class="investlogo">
                     <img src='images/icons/mminvest.png' alt='Bastion'>
                   </div>
                   <div class="mminvestpattern">
                     <img src='images/mminvestpattern.png' class="pattern" alt='Bastion'>
+                    <div id = "mmInvestCarousel" class="carousel slide" data-ride="carousel">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active" style="background-image: url('images/parkanicka.jpg');">
+                          <!--<img class="d-block w-100" src="images/headerCarousel1.png" alt="First slide">-->
+                          <div class="container carouselContent">
+                            <div>
+                              <h5>PARK ANIČKA</h5>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="carousel-item" style="background-image: url('images/polyfunkciaanicka.jpg');">
+                          <!--<img class="d-block w-100" src="images/headerCarousel1.png" alt="First slide">-->
+                          <div class="container carouselContent">
+                            <div>
+                              <h5>POLYFUNKCIA PARK ANIČKA</h5>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="carousel-item" style="background-image: url('images/panorama.jpg');">
+                          <!--<img class="d-block w-100" src="images/headerCarousel1.png" alt="First slide">-->
+                          <div class="container carouselContent">
+                            <div>
+                              <h5>PANORAMA</h5>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="carousel-controls">
+                        <a class="carousel-control-prev" href="#mmInvestCarousel" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#mmInvestCarousel" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </div>
+                      
+                    </div>
+                  </div>
+                  <p class="font-italic text-white w-100 mt-4">Náš projekt Obytný súbor Park Anička bol ocenený za architektonické riešenie v súťaži Stavba roka 2017</p>
+                  <a class="relocation mt-4"href="http://www.mminvest.sk/" target="_blank">PREJSŤ NA STRÁNKU DEVELOPERA</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id = "news" name="news">
+          <div class="container">
+            <div class="row">
+              <h4 class="w-100 text-center">Aktuality</h4>
+              <h6 class="w-100 text-center mt-3" onclick="window.location.href='aktuality'">Archív aktualít</h6>
+            </div>
+            <div class="row justify-content-center pt-4">
+              <!--<div id = "newsCarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner w-100" role="listbox">
+                    <div class="carousel-item active">
+                      <div class="newsCarouselContent col-4" onclick="window.location.href='aktuality/zahajeny-zaciatok-vystavby'">
+                        <div class="position-relative">
+                          <img class="w-100" src="images/aktuality/01.jpg">
+                          <div class="hoverbckgrnd">
+                            <i class="fas fa-plus"></i>
+                          </div>
+                        </div>
+                        <h6 class="pt-4">Zahájenie výstavby administratívneho - obchodného centra BASTION</h6>
+                        <p class="pt-3"><img class="mr-1" src="images/icons/clock.png">10. Máj 2018</p>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="newsCarouselContent col-4 " onclick="window.location.href='aktuality/zelene-administrativne-budovy'">
+                          <div class="position-relative">
+                            <img class="w-100" src="images/aktuality/02.jpg">
+                            <div class="hoverbckgrnd">
+                              <i class="fas fa-plus"></i>
+                            </div>
+                          </div>
+                          <h6 class="pt-4">Prečo bude BASTION CENTER zelenou budovou?</h6>
+                          <p class="pt-3"><img class="mr-1" src="images/icons/clock.png">10. Jún 2018</p>
+                      </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#newsCarousel" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#newsCarousel" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>-->
+              <div class="aktualita col-lg-4 col-12" onclick="window.location.href='aktuality/zahajeny-zaciatok-vystavby'">
+                <div class="position-relative">
+                  <img class="w-100" src="images/aktuality/01.jpg">
+                  <div class="hoverbckgrnd">
+                    <i class="fas fa-plus"></i>
+                  </div>
+                </div>
+                <h6 class="pt-4">Zahájenie výstavby administratívneho - obchodného centra BASTION</h6>
+                <p class="pt-3"><img class="mr-1" src="images/icons/clock.png">10. Máj 2018</p>
+              </div>
+              <div class="aktualita col-lg-4 col-12" onclick="window.location.href='aktuality/zelene-administrativne-budovy'">
+                <div class="position-relative">
+                  <img class="w-100" src="images/aktuality/02.jpg">
+                  <div class="hoverbckgrnd">
+                    <i class="fas fa-plus"></i>
+                  </div>
+                </div>
+                <h6 class="pt-4">Prečo bude BASTION CENTER zelenou budovou?</h6>
+                <p class="pt-3"><img class="mr-1" src="images/icons/clock.png">10. Jún 2018</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id = "contactUs" name="contactus">
+          <div class="container">
+            <div class="row header">
+              <h3 class="w-100">MÁTE ZÁUJEM O PRIESTORY V BASTION OFFICE CENTER?</h3>
+            </div>
+            <div class="row">
+              <div class="col-lg-6 col-12">
+                <h5>Vyplňte prosím kontaktný formulár</h5>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-6 col-12">
+                <form>
+                  <div class="form-group mt-4">
+                    <input type="text" class="form-control" id="name" placeholder="MENO A PRIEZVISKO" required="true">
+                  </div>
+                  <div class="form-group mt-4">
+                    <input type="email" class="form-control" id="email" placeholder="EMAIL" required="true">
+                  </div>
+                  <div class="form-group mt-4">
+                    <input type="text" class="form-control" id="phone" placeholder="TELEFÓN" required="true">
+                  </div>
+                  <div class="form-group mt-4">
+                    <textarea class="form-control" id="message" placeholder="SPRIEVODNÝ TEXT" rows="6" required="true"></textarea>
+                  </div>
+                  <div class="form-check pb-4 pt-4">
+                    <input class="form-check-input" type="checkbox" value="" id="gdpr">
+                    <label class="form-check-label" for="gdpr">
+                      Súhlasím so spracovaním <strong>osobných údajov</strong>
+                    </label>
+                  </div>
+                  <button type="submit" class="sendContact">Odoslať</button>
+                </form>
+              </div>
+              <div class="col-lg-6 col-12">
+                <div class="contactBox mt-4 ml-4">
+                  <div class="contactBoxIcon">
+                    <img src='images/icons/tel.png' class="pattern" alt='Bastion'>
+                  </div>
+                  <div class="contactBoxText">
+                    <h6>ZAVOLAJTE NÁM</h6>
+                    <h4>0907 138 724</h4>
+                  </div>
+                </div>
+                <div class="contactBox mt-4 ml-4">
+                  <div class="contactBoxIcon">
+                    <img src='images/icons/envelope.png' class="pattern" alt='Bastion'>
+                  </div>
+                  <div class="contactBoxText">
+                    <h6>NAPÍŠTE NÁM</h6>
+                    <h4>info@mminvest.sk</h4>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
+        <section class="footer">
+          <div class="container">
+            <div class="row justify-content-between">
+            <div class="col-lg-2 col-12 footerlogo">
+              <img src='images/icons/footerlogo.png' alt='Bastion'>
+            </div>
+              
+              <div class="bastionffice col-lg-3 col-12" >
+                <h6>BASTION OFFICE CENTER</h6>
+                <p>Administratívno-obchodné centrum</p>
+                <p>Továrenská ul.</p>
+                <p>040 01 Košice</p>
+              </div>
+              <div class="footerdeveloper col-lg-3 col-12" >
+                <h6>DEVELOPER</h6>
+                <p>MM Invest Košice, s.r.o.</p>
+                <p>Kováčska 19, 040 01 Košice</p>
+                <p>Tel./fax: +421 55 622 03 94</p>
+                <p>info@mminvest.sk</p>
+              </div>
+              <div class="col-lg-3 d-flex col-12 footerother">
+                <div class="">
+                <h6>OSTATNÉ</h6>
+                <p>Zásady ochrany súkromia</p>
+                <p>Ochrana osobných údajov</p>
+                <p>Dokumenty</p>
+                <p>Zmluvy</p>
+              </div>
+              <div class="footersocial">
+                <h6>SLEDUJTE NÁS</h6>
+                <a href="">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                
+              </div>
+              </div>
+              
+            </div>
+          </div>
+        </section>
+        <div class="modal fade" id="firstfloor" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-6 d-flex">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        Späť na výber podlažia
+                      </button>
+                    </div>
+                    <div class="col-md-6 pt-4">
+                      <h4 class="text-right">Pôdorys vybraného podlažia</h4>
+                      <h3 class="text-right">1. podlažie</h3>
+                    </div>
+                    <div class="col-12">
+                       <img src='images/podorys/1.png' class="pattern" alt='Bastion'>
+                    </div>
+                  </div>
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="secondfloor" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-6 d-flex">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        Späť na výber podlažia
+                      </button>
+                    </div>
+                    <div class="col-md-6 pt-4">
+                      <h4 class="text-right">Pôdorys vybraného podlažia</h4>
+                      <h3 class="text-right">2. podlažie</h3>
+                    </div>
+                    <div class="col-12">
+                       <img src='images/podorys/2.png' class="pattern" alt='Bastion'>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="thirdfloor" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-6 d-flex">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        Späť na výber podlažia
+                      </button>
+                    </div>
+                    <div class="col-md-6 pt-4">
+                      <h4 class="text-right">Pôdorys vybraného podlažia</h4>
+                      <h3 class="text-right">3. podlažie</h3>
+                    </div>
+                    <div class="col-12">
+                       <img src='images/podorys/2.png' class="pattern" alt='Bastion'>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="fourthfloor" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-6 d-flex">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        Späť na výber podlažia
+                      </button>
+                    </div>
+                    <div class="col-md-6 pt-4">
+                      <h4 class="text-right">Pôdorys vybraného podlažia</h4>
+                      <h3 class="text-right">4. podlažie</h3>
+                    </div>
+                    <div class="col-12">
+                       <img src='images/podorys/2.png' class="pattern" alt='Bastion'>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="fifthfloor" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-6 d-flex">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        Späť na výber podlažia
+                      </button>
+                    </div>
+                    <div class="col-md-6 pt-4">
+                      <h4 class="text-right">Pôdorys vybraného podlažia</h4>
+                      <h3 class="text-right">5. podlažie</h3>
+                    </div>
+                    <div class="col-12">
+                       <img src='images/podorys/3.png' class="pattern" alt='Bastion'>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="sixthfloor" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-6 d-flex">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        Späť na výber podlažia
+                      </button>
+                    </div>
+                    <div class="col-md-6 pt-4">
+                      <h4 class="text-right">Pôdorys vybraného podlažia</h4>
+                      <h3 class="text-right">6. podlažie</h3>
+                    </div>
+                    <div class="col-12">
+                       <img src='images/podorys/4.png' class="pattern" alt='Bastion'>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
     </div>
     <!-- Scripts -->
     <script src="js/jquery-3.3.1.min.js"></script>
@@ -337,6 +817,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
     <script src='js/bastion.js'></script>
     <script src='//cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js'></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwqcOChXPRsZeSlAXkZY5zAegNlKwA4mI&callback=myMap"
+    async defer></script>
 
   </body>
 </html>
